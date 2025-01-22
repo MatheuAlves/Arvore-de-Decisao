@@ -1,0 +1,11 @@
+equipe,ar_livre,numeros,artes,tecnologia,complexo,comunicacao,cuidar_pessoa,fisico,organizado,profissao
+1,0,1,0,1,1,0,0,0,1,Engenharia
+1,0,0,0,0,1,0,1,0,1,Medicina
+1,0,0,1,0,0,0,0,0,0,Artes
+1,0,1,0,1,1,0,0,0,0,Tecnologia
+1,0,0,0,0,1,1,0,0,1,Direito
+1,1,0,0,0,0,0,0,1,1,Esportes
+1,0,0,1,0,0,1,0,0,0,Musica
+0,1,0,1,0,0,0,0,0,0,Fotografia
+0,0,1,0,1,1,0,0,0,1,Programacao
+0,1,0,1,0,0,0,0,1,0,Jardinagem
