@@ -52,7 +52,10 @@ O conjunto de dados contém várias variáveis independentes (preditoras) relaci
 Esses atributos são usados como entradas no modelo para prever se uma paciente tem diabetes, levando em consideração tanto fatores médicos quanto genéticos e de estilo de vida.
 
 ### Acurácia
-Foi obtida uma acurácia de 74% (0.74). Este valor indica que o modelo foi capaz de classificar corretamente 74% dos pacientes no conjunto de teste. No código, a acurácia é calculada utilizando a função `accuracy_score` da biblioteca `scikit-learn`. Após o treinamento do modelo com os dados de treino, as previsões são feitas para o conjunto de teste (`y_pred`). A acurácia é obtida comparando essas previsões com os rótulos reais do conjunto de teste (`y_test`), calculando a proporção de predições corretas em relação ao total. O resultado final é exibido no console como uma porcentagem.
+
+No código, a acurácia é calculada utilizando a função `accuracy_score` da biblioteca `scikit-learn`. Após o treinamento do modelo com os dados de treino, as previsões são feitas para o conjunto de teste (`y_pred`). A acurácia é obtida comparando essas previsões com os rótulos reais do conjunto de teste (`y_test`), calculando a proporção de predições corretas em relação ao total. O resultado final é exibido no console como uma porcentagem.
+
+Foi obtida uma acurácia de 74% (0.74). Este valor indica que o modelo foi capaz de classificar corretamente 74% dos pacientes no conjunto de teste. 
 
 ### Conclusão
 A implementação da árvore de decisão mostrou ser eficaz para prever a presença de diabetes com base em informações clínicas, atingindo uma acurácia de 74%. Isso significa que o modelo conseguiu acertar a maioria das classificações no conjunto de teste, tornando-o uma ferramenta útil para diagnósticos preliminares. Apesar disso, há espaço para melhorias que podem aumentar a precisão do modelo, como ajustes nos parâmetros ou melhorias no processamento dos dados.
