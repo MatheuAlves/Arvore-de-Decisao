@@ -23,3 +23,24 @@ Participantes: Matheus Alves e Pablo Sousa
 </ul>
 
 ## Parte 2 - Exploração de Datasets no Kaggle e UCI
+
+ Uma árvore de decisão para resolver um problema baseado nesse dataset.
+
+ ### Descrição do Problema
+ Este dataset é originalmente do National Institute of Diabetes and Digestive and Kidney Diseases. O objetivo é prever, de forma diagnóstica, se um paciente possui diabetes com base em certas medições diagnósticas incluídas no conjunto de dados. Foram aplicadas várias restrições na seleção das instâncias, a partir de um banco de dados maior. Em particular, todas as pacientes neste dataset são mulheres com pelo menos 21 anos de idade e pertencentes à herança indígena Pima.
+
+O conjunto de dados contém várias variáveis independentes (preditoras) relacionadas a fatores médicos e apenas uma variável dependente, a variável de saída (Outcome), que indica a presença ou ausência de diabetes.
+
+### Dicionário de Dados
+
+| Atributo                 | Descrição                          |
+|--------------------------|------------------------------------|
+| Pregnancies              | Número de gestações                |
+| Glucose                  | Nível de glicose no sangue         |
+| BloodPressure            | Medição da pressão arterial        |
+| SkinThickness            | Espessura da pele                  |
+| Insulin                  | Nível de insulina no sangue        |
+| BMI                      | Índice de massa corporal           |
+| DiabetesPedigreeFunction | Porcentagem de diabetes            |
+| Age                      | Idade                              |
+| Outcome                  | Resultado final. 1 é sim e 0 é não |
