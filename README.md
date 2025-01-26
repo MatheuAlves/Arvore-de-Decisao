@@ -26,6 +26,10 @@ Participantes: Matheus Alves e Pablo Sousa
 
  Uma árvore de decisão para resolver um problema baseado nesse dataset.
 
+ ### Dataset
+
+ [**Kaggle - Predict Diabetes**](https://www.kaggle.com/datasets/whenamancodes/predict-diabities)
+
  ### Descrição do Problema
  Este dataset é originalmente do National Institute of Diabetes and Digestive and Kidney Diseases. O objetivo é prever, de forma diagnóstica, se um paciente possui diabetes com base em certas medições diagnósticas incluídas no conjunto de dados. Foram aplicadas várias restrições na seleção das instâncias, a partir de um banco de dados maior. Em particular, todas as pacientes neste dataset são mulheres com pelo menos 21 anos de idade e pertencentes à herança indígena Pima.
 
