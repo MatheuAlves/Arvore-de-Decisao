@@ -24,7 +24,13 @@ Participantes: Matheus Alves e Pablo Sousa
 
 ## Parte 2 - Exploração de Datasets no Kaggle e UCI
 
- Uma árvore de decisão para resolver um problema baseado nesse dataset.
+Três modelos de aprendizado de máquina foram utilizados para resolver um problema baseado neste dataset:
+
+<ul>
+<li>K-Nearest Neighbors (KNN)</li>
+<li>Árvore de Decisão (Decision Tree)</li>
+<li>Máquinas de Vetores de Suporte (SVM - Support Vector Machine)</li>
+</ul>
 
  ### Dataset
 
@@ -51,11 +57,46 @@ O conjunto de dados contém várias variáveis independentes (preditoras) relaci
 
 Esses atributos são usados como entradas no modelo para prever se uma paciente tem diabetes, levando em consideração tanto fatores médicos quanto genéticos e de estilo de vida.
 
-### Acurácia
+### Modelos Utilizados
+Três algoritmos foram testados para realizar a classificação:
+<ul>
+<li*><strong>1. Árvore de Decisão (Decision Tree):</strong> Modelo baseado em divisões sequenciais dos dados, criando uma estrutura hierárquica de decisões.</li><br>
+<li*><strong>2. K-Nearest Neighbors (KNN):</strong> Algoritmo baseado na proximidade entre pontos, classificando novos exemplos com base nos vizinhos mais próximos.</li*><br>
+<li*><strong>3. Máquinas de Vetores de Suporte (SVM - Support Vector Machine):</strong> Modelo que encontra um hiperplano que melhor separa as classes, maximizando a margem entre os dados positivos e negativos.</li>
+</ul>
 
+### Acurácia dos Modelos
 No código, a acurácia é calculada utilizando a função `accuracy_score` da biblioteca `scikit-learn`. Após o treinamento do modelo com os dados de treino, as previsões são feitas para o conjunto de teste (`y_pred`). A acurácia é obtida comparando essas previsões com os rótulos reais do conjunto de teste (`y_test`), calculando a proporção de predições corretas em relação ao total. O resultado final é exibido no console como uma porcentagem.
 
-Foi obtida uma acurácia de 74% (0.74). Este valor indica que o modelo foi capaz de classificar corretamente 74% dos pacientes no conjunto de teste. 
+Ao final dos testes obtivemos os seguintes resultados:
+
+
+| Modelo                   | Acurácia                           |
+|--------------------------|------------------------------------|
+| Decision Tree            | 72%                                |
+| KNN                      | 69%                                |
+| SVM                      | 74%                                |
+
+### Comparação dos Resultados
+Os modelos apresentaram desempenhos diferentes devido às suas características e suposições sobre os dados.
+<ul>
+<strong>1. SVM - Melhor desempenho (74%):</strong><br>
+O SVM obteve a melhor acurácia, indicando que foi o mais eficiente para este conjunto de dados.Isso acontece porque SVM funciona bem em dados com múltiplas dimensões e distribuições não lineares, o que é o caso deste dataset. A principal força do SVM está na capacidade de maximizar a separação entre as classes, mesmo quando os dados não são perfeitamente separáveis.
+</ul>
+<ul>
+<strong>2. Decision Tree - Segundo melhor desempenho (72%)</strong><br>
+A Árvore de Decisão teve um desempenho um pouco inferior ao SVM.
+Esse modelo divide os dados em regras de decisão, o que pode ser vantajoso para interpretar os resultados.
+No entanto, as árvores de decisão podem sofrer com overfitting, especialmente se não forem bem podadas.
+</ul>
+<ul>
+<strong>3. KNN - Pior desempenho (69%)</strong><br>
+O KNN apresentou a menor acurácia dos três modelos.
+Como esse algoritmo classifica um novo dado com base nos vizinhos mais próximos, ele pode ser muito sensível a distribuições desbalanceadas e ruídos no conjunto de dados.
+Além disso, a escolha do número de vizinhos (k) pode afetar muito o desempenho, e um ajuste fino poderia melhorar a acurácia.
+</ul>
 
 ### Conclusão
-A implementação da árvore de decisão mostrou ser eficaz para prever a presença de diabetes com base em informações clínicas, atingindo uma acurácia de 74%. Isso significa que o modelo conseguiu acertar a maioria das classificações no conjunto de teste, tornando-o uma ferramenta útil para diagnósticos preliminares. Apesar disso, há espaço para melhorias que podem aumentar a precisão do modelo, como ajustes nos parâmetros ou melhorias no processamento dos dados.
+A análise comparativa revelou que o SVM foi o modelo mais eficaz (74%), devido à sua capacidade de separar classes de forma otimizada. A Árvore de Decisão (72%) mostrou-se interpretável, mas propensa a overfitting. O KNN (69%) teve o pior desempenho, possivelmente por sua sensibilidade à distribuição dos dados e à escolha de k.
+
+A escolha do melhor modelo depende do contexto, balanceando precisão, interpretabilidade e custo computacional. Melhorias como tuning de hiperparâmetros, feature engineering e ensemble learning podem elevar o desempenho dos modelos, destacando a importância da experimentação para soluções mais robustas.
